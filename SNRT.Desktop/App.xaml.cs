@@ -59,8 +59,8 @@ public partial class App : System.Windows.Application
 			.ConfigureServices(services =>
 			{
 				services.AddInfrastructure(dbPath);
-				services.AddSingleton<LoginWindow>();
-				services.AddSingleton<MainWindow>();
+				services.AddTransient<LoginWindow>();
+				services.AddTransient<MainWindow>();
 			})
 			.Build();
 

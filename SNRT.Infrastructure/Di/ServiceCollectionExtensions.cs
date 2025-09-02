@@ -10,11 +10,11 @@ public static class ServiceCollectionExtensions
 {
 	public static IServiceCollection AddInfrastructure(this IServiceCollection services, string sqlitePath)
 	{
-		services.AddDbContext<AppDbContext>(options =>
+		services.AddDbContextFactory<AppDbContext>(options =>
 		{
 			options.UseSqlite($"Data Source={sqlitePath}");
 		});
-		services.AddScoped<IAuthService, AuthService>();
+		services.AddSingleton<IAuthService, AuthService>();
 		return services;
 	}
 } 

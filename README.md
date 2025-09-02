@@ -1,6 +1,6 @@
 # SNRT Employee Desktop App (WPF .NET 8)
 
-Internal Windows desktop app for SNRT employees with authentication, per-user draggable titles, RSS feed, user activity logging, and admin dashboard.
+Internal Windows desktop app for SNRT employees with authentication, a per-user draggable RSS titles table, user activity logging, and admin dashboard. This application is for internal SNRT use only.
 
 ## Prerequisites
 - .NET SDK 8.x installed
@@ -39,6 +39,7 @@ dotnet run --project SNRT.Desktop
 
 ## 3) Creating users and Admin
 - In the app, use "Sign up" to create a user (first name, last name, email, password)
+- Signup requires password confirmation; passwords must match.
 - Login with the new user
 - Promote to Admin using SQL in SQLite (e.g., with DB Browser):
 ```sql
@@ -53,12 +54,10 @@ Run the app then check each item:
   - [ ] Login with correct password → success
   - [ ] Login with wrong password → shows error, no crash
   - [ ] Logout → returns to login
-- Titles (left pane)
-  - [ ] 11 default titles visible
-  - [ ] Drag with mouse to reorder
-  - [ ] Close and reopen app → order persists for the same user
-- RSS (right pane)
+- RSS Titles (single table)
   - [ ] See items from `Hespress` and `Media24` (network dependent)
+  - [ ] Drag with mouse to reorder RSS titles
+  - [ ] Close and reopen app → order persists for the same user
   - [ ] Errors (if any) are logged without crashing UI
 - Admin Dashboard (requires Admin)
   - [ ] Open dashboard
@@ -71,8 +70,9 @@ Run the app then check each item:
 - Assets (Logo)
   - [ ] `SNRT.Desktop/Assets/logo.png` exists (place your PNG here)
   - [ ] On build, file is copied to: `SNRT.Desktop/bin/Release/net8.0-windows/Assets/logo.png`
+  - [ ] Logo appears in the window title bar and in the Windows taskbar
   - [ ] Login window shows centered logo at top (max height 100px)
-  - [ ] Main window shows centered logo above titles list (max height 100px)
+  - [ ] Main window shows centered logo above RSS titles list (max height 100px)
 
 ## 5) Migrations (EF Core) – Add/Apply
 Generate a new migration when you change the model:
@@ -115,7 +115,16 @@ Covers:
 ## 8) Logging (Serilog)
 - Console + rolling file (7 days)
 - Log file path: `%LocalAppData%\SNRT\logs\snrt-YYYYMMDD.log`
-- Key events logged: signups, logins (success/failure), logouts, RSS refresh results, title reordering
+- Key events logged: signups, logins (success/failure), logouts, RSS refresh results, RSS title reordering
+
+To view logs:
+```powershell
+Start-Process explorer "$env:LocalAppData\SNRT\logs"
+```
+
+To inspect user activity in the database (SQLite):
+- Open the DB at `%LocalAppData%\SNRT\snrt.db` in your preferred SQLite browser.
+- Tables of interest: `Users`, `LoginLogs`, `UserDisplayOrders`.
 
 ## 9) Project Structure (Clean Architecture)
 - SNRT.Domain: Entities and enums (`User`, `LoginLog`, `TitleItem`, `UserTitleOrder`, `UserRole`)

@@ -11,6 +11,7 @@ public class AppDbContext : DbContext
 	public DbSet<LoginLog> LoginLogs => Set<LoginLog>();
 	public DbSet<TitleItem> TitleItems => Set<TitleItem>();
 	public DbSet<UserTitleOrder> UserTitleOrders => Set<UserTitleOrder>();
+	public DbSet<UserDisplayOrder> UserDisplayOrders => Set<UserDisplayOrder>();
 
 	protected override void OnModelCreating(ModelBuilder modelBuilder)
 	{
@@ -21,6 +22,10 @@ public class AppDbContext : DbContext
 			entity.Property(u => u.LastName).HasMaxLength(100).IsRequired();
 			entity.Property(u => u.Email).HasMaxLength(200).IsRequired();
 			entity.Property(u => u.PasswordHash).IsRequired();
+			entity.Property(u => u.Role)
+				.HasConversion<string>()
+				.HasMaxLength(20)
+				.IsRequired();
 		});
 
 		modelBuilder.Entity<LoginLog>(entity =>
@@ -46,6 +51,16 @@ public class AppDbContext : DbContext
 			entity.HasOne(x => x.TitleItem)
 				.WithMany()
 				.HasForeignKey(x => x.TitleItemId)
+				.OnDelete(DeleteBehavior.Cascade);
+		});
+
+		modelBuilder.Entity<UserDisplayOrder>(entity =>
+		{
+			entity.HasKey(x => new { x.UserId, x.ItemKey });
+			entity.Property(x => x.ItemKey).HasMaxLength(500).IsRequired();
+			entity.HasOne(x => x.User)
+				.WithMany()
+				.HasForeignKey(x => x.UserId)
 				.OnDelete(DeleteBehavior.Cascade);
 		});
 

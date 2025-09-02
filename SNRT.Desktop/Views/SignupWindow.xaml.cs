@@ -1,5 +1,7 @@
 using System.Windows;
 using SNRT.Application.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
+using Serilog;
 
 namespace SNRT.Desktop.Views;
 
@@ -28,19 +30,22 @@ public partial class SignupWindow : Window
 				ConfirmBox.Password
 			);
 			await _auth.SignupAsync(req, CancellationToken.None);
-			var login = new LoginWindow(_sp, _auth);
+			Log.Information("Signup succeeded for {Email}", req.Email);
+			var login = _sp.GetRequiredService<LoginWindow>();
 			login.Show();
 			Close();
 		}
 		catch (Exception ex)
 		{
+			Log.Warning(ex, "Signup failed for {Email}", EmailBox.Text.Trim());
 			ErrorText.Text = ex.Message;
 		}
 	}
 
 	private void OnBackClick(object sender, RoutedEventArgs e)
 	{
-		var login = new LoginWindow(_sp, _auth);
+		Log.Information("Signup cancelled, returning to login");
+		var login = _sp.GetRequiredService<LoginWindow>();
 		login.Show();
 		Close();
 	}

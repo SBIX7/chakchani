@@ -149,8 +149,10 @@ namespace SNRT.Infrastructure.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Role")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -158,6 +160,23 @@ namespace SNRT.Infrastructure.Persistence.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("SNRT.Domain.Users.UserDisplayOrder", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ItemKey")
+                        .HasMaxLength(500)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("SortOrder")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("UserId", "ItemKey");
+
+                    b.ToTable("UserDisplayOrders");
                 });
 
             modelBuilder.Entity("SNRT.Domain.Users.UserTitleOrder", b =>
@@ -182,6 +201,17 @@ namespace SNRT.Infrastructure.Persistence.Migrations
                 {
                     b.HasOne("SNRT.Domain.Users.User", "User")
                         .WithMany("LoginLogs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SNRT.Domain.Users.UserDisplayOrder", b =>
+                {
+                    b.HasOne("SNRT.Domain.Users.User", "User")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

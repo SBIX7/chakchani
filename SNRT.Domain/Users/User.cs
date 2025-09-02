@@ -48,3 +48,12 @@ public class UserTitleOrder
 	public User? User { get; set; }
 	public TitleItem? TitleItem { get; set; }
 } 
+
+public class UserDisplayOrder
+{
+	public Guid UserId { get; set; }
+	public string ItemKey { get; set; } = string.Empty;
+	public int SortOrder { get; set; }
+
+	public User? User { get; set; }
+}

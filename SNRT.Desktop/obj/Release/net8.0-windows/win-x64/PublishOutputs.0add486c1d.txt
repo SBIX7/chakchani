@@ -1,0 +1,11 @@
+C:\Users\Mohamed\Desktop\SNRT-Publish\SNRT.Desktop.pdb
+C:\Users\Mohamed\Desktop\SNRT-Publish\D3DCompiler_47_cor3.dll
+C:\Users\Mohamed\Desktop\SNRT-Publish\PenImc_cor3.dll
+C:\Users\Mohamed\Desktop\SNRT-Publish\PresentationNative_cor3.dll
+C:\Users\Mohamed\Desktop\SNRT-Publish\vcruntime140_cor3.dll
+C:\Users\Mohamed\Desktop\SNRT-Publish\wpfgfx_cor3.dll
+C:\Users\Mohamed\Desktop\SNRT-Publish\e_sqlite3.dll
+C:\Users\Mohamed\Desktop\SNRT-Publish\SNRT.Application.pdb
+C:\Users\Mohamed\Desktop\SNRT-Publish\SNRT.Infrastructure.pdb
+C:\Users\Mohamed\Desktop\SNRT-Publish\SNRT.Domain.pdb
+C:\Users\Mohamed\Desktop\SNRT-Publish\SNRT.Desktop.exe

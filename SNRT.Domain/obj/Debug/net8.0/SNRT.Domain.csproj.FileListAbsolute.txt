@@ -1,0 +1,11 @@
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\bin\Debug\net8.0\SNRT.Domain.deps.json
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\bin\Debug\net8.0\SNRT.Domain.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\bin\Debug\net8.0\SNRT.Domain.pdb
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\SNRT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\SNRT.Domain.AssemblyInfoInputs.cache
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\SNRT.Domain.AssemblyInfo.cs
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\SNRT.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\SNRT.Domain.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\refint\SNRT.Domain.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\SNRT.Domain.pdb
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Domain\obj\Debug\net8.0\ref\SNRT.Domain.dll

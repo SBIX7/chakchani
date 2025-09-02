@@ -1,0 +1,334 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Tests\\SNRT.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj",
+        "projectName": "SNRT.Application",
+        "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj",
+        "projectName": "SNRT.Domain",
+        "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Infrastructure\\SNRT.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Infrastructure\\SNRT.Infrastructure.csproj",
+        "projectName": "SNRT.Infrastructure",
+        "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Infrastructure\\SNRT.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj": {
+                "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj"
+              },
+              "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj": {
+                "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Domain\\SNRT.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Tests\\SNRT.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Tests\\SNRT.Tests.csproj",
+        "projectName": "SNRT.Tests",
+        "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Tests\\SNRT.Tests.csproj",
+        "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj": {
+                "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Application\\SNRT.Application.csproj"
+              },
+              "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Infrastructure\\SNRT.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Mohamed\\Desktop\\projet aya\\SNRT.Infrastructure\\SNRT.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CodeHollow.FeedReader": {
+              "target": "Package",
+              "version": "[1.2.6, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.6.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.5.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

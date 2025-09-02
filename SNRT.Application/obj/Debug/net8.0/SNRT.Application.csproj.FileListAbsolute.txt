@@ -1,0 +1,15 @@
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\bin\Debug\net8.0\SNRT.Application.deps.json
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\bin\Debug\net8.0\SNRT.Application.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\bin\Debug\net8.0\SNRT.Application.pdb
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\bin\Debug\net8.0\SNRT.Domain.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\bin\Debug\net8.0\SNRT.Domain.pdb
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.csproj.AssemblyReference.cache
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.AssemblyInfoInputs.cache
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.AssemblyInfo.cs
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.App.1DE63649.Up2Date
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\refint\SNRT.Application.dll
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\SNRT.Application.pdb
+C:\Users\Mohamed\Desktop\projet aya\SNRT.Application\obj\Debug\net8.0\ref\SNRT.Application.dll

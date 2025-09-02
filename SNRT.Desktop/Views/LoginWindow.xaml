@@ -1,0 +1,30 @@
+<Window x:Class="SNRT.Desktop.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SNRT - Login" Height="420" Width="420" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="Assets/logo.png" Height="100" Stretch="Uniform" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Text="Login" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,8,0,0"/>
+        <StackPanel Grid.Row="2" Margin="0,16,0,0">
+            <TextBlock Text="Email"/>
+            <TextBox x:Name="EmailBox" Height="28"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Margin="0,8,0,0">
+            <TextBlock Text="Password"/>
+            <PasswordBox x:Name="PasswordBox" Height="28"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,16,0,0" HorizontalAlignment="Right" >
+            <Button Content="Login" Width="80" Margin="0,0,8,0" Click="OnLoginClick"/>
+            <Button Content="Sign up" Width="80" Click="OnSignupClick"/>
+        </StackPanel>
+        <TextBlock x:Name="ErrorText" Grid.Row="5" Foreground="Red"/>
+    </Grid>
+</Window> 
